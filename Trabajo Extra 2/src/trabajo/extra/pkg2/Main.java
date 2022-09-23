@@ -21,7 +21,7 @@ public class Main {
                 "Ingrese la cantidad de horas laboradas a la semana: "));
 
         PrecioHora = Float.parseFloat(JOptionPane.showInputDialog(
-                "Ingrese el valor de su hora: "));
+                "Ingrese el valor de su hora en dólares: "));
 
         SalarioBruto = ( HorasLaboradas * PrecioHora ) * 4;
         
