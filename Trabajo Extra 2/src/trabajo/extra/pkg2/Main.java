@@ -61,8 +61,32 @@ public class Main {
         
         
 //====================EJERCICIO 3(Temperatura)===============================
+        byte temp = 0;
+        temp = Byte.parseByte(JOptionPane.showInputDialog(
+                "Digite la temperatura en centígrados: "));
+        if (temp <= 10) {
+                JOptionPane.showMessageDialog(null,
+                "Tipo de clima: Frío");
+        }
+        if (temp <= 20 && temp > 10) {
+                JOptionPane.showMessageDialog(null,
+                "Tipo de clima: Nublado");   
+        }
+        if (temp>20 && temp<=30) {
+                JOptionPane.showMessageDialog(null,
+                "Tipo de clima: Caluroso");
+        }
+        if (temp>30) {
+                JOptionPane.showMessageDialog(null,
+                "Tipo de clima: Tropical");
+        }
         
         
+
+                
+        
+        
+
  
         
 //====================EJERCICIO 4(Casino)====================================     
