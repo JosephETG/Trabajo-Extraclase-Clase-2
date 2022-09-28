@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class Main {
 
     public static void main(String[] args) {
-        
+//========EJERCICIO 1 (Salario)=============================================         
         float HorasLaboradas;
         float PrecioHora;
         byte AñosAntiguedad;
@@ -54,6 +54,18 @@ public class Main {
             JOptionPane.showMessageDialog(null,
                     "Su Salario es de: " + SalarioBruto);
         }
+//=====================EJERCICIO 2(Farmacia)=================================
+        
+        
+        
+        
+        
+//====================EJERCICIO 3(Temperatura)===============================
+        
+        
+ 
+        
+//====================EJERCICIO 4(Casino)====================================     
     }
     
 }
