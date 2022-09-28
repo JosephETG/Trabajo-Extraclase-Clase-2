@@ -15,7 +15,7 @@ public class Main {
         double Bono;
 
         AñosAntiguedad = Byte.parseByte(JOptionPane.showInputDialog(
-                "Ingrese su antiguedad en la empresa: "));
+                "Ingrese la cantidad de años de antiguedad en la empresa: "));
 
         HorasLaboradas = Float.parseFloat(JOptionPane.showInputDialog(
                 "Ingrese la cantidad de horas laboradas a la semana: "));
@@ -38,7 +38,7 @@ public class Main {
                 SalarioNeto = SalarioBruto - Deducciones;
 
                 JOptionPane.showMessageDialog(null,
-                        "Su salario neto es: " + SalarioNeto);
+                        "Su salario neto es de: " + SalarioNeto);
 
             } else if ( SalarioBruto > 2000 ) {
 
@@ -47,12 +47,12 @@ public class Main {
                 SalarioNeto = SalarioBruto - Deducciones;
 
                 JOptionPane.showMessageDialog(null,
-                        "Su salario neto es: " + SalarioNeto);
+                        "Su salario neto es de: " + SalarioNeto);
             }
         } else {
 
             JOptionPane.showMessageDialog(null,
-                    "Su Salario es: " + SalarioBruto);
+                    "Su Salario es de: " + SalarioBruto);
         }
     }
     
