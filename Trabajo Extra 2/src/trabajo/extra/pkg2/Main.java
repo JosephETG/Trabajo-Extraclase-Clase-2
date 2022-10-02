@@ -55,7 +55,22 @@ public class Main {
                     "Su Salario es de: " + SalarioBruto);
         }
 //=====================EJERCICIO 2(Farmacia)=================================
+   float compra;
+        float formaPago;
+        compra = Byte.parseByte(JOptionPane.showInputDialog(
+                "Ingrese valor de su compra:"));
+        formaPago= Float.parseFloat(JOptionPane.showInputDialog(
+                "1.Tarjeta 2.Efectivo"));
+        float tarjeta= compra * 0.3;
+        float efectivo = (compra * 5)/100;
         
+        if(compra == tarjeta){
+            JOptionPane.showMessageDialog(null,
+                "Su monto a pagar es"+ tarjeta);
+        } else{
+            JOptionPane.showMessageDialog(null,
+                "Su monto a pagar es"+ efectivo);
+        }     
         
         
         
