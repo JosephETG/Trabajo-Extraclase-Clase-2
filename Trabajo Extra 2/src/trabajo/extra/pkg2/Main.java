@@ -55,21 +55,27 @@ public class Main {
                     "Su Salario es de: " + SalarioBruto);
         }
 //=====================EJERCICIO 2(Farmacia)=================================
-   float compra;
-        float formaPago;
-        compra = Byte.parseByte(JOptionPane.showInputDialog(
+        int compra;
+        Byte formaPago;
+        compra = Integer.parseInt(JOptionPane.showInputDialog(
                 "Ingrese valor de su compra:"));
-        formaPago= Float.parseFloat(JOptionPane.showInputDialog(
+        formaPago= Byte.parseByte(JOptionPane.showInputDialog(
                 "1.Tarjeta 2.Efectivo"));
-        float tarjeta= compra * 0.3;
-        float efectivo = (compra * 5)/100;
+        int tarjeta = (compra * 3)/100;
+        int efectivo = (compra * 5)/100;
         
-        if(compra == tarjeta){
-            JOptionPane.showMessageDialog(null,
-                "Su monto a pagar es"+ tarjeta);
+        if(formaPago == 1){
+                int Ncompra = compra + tarjeta;
+                JOptionPane.showMessageDialog(null,
+                "Método de pago: Tarjeta"+"\n"
+                +"Recargo aplicado: "+tarjeta+"\n"
+                +"Su monto a pagar es: "+ Ncompra);
         } else{
-            JOptionPane.showMessageDialog(null,
-                "Su monto a pagar es"+ efectivo);
+                int Ncompra = compra - efectivo;
+                JOptionPane.showMessageDialog(null,
+                "Método de pago: Efectivo"+"\n"
+                +"Descuento aplicado: "+efectivo+"\n"
+                +"Su monto a pagar es: "+ Ncompra);
         }     
         
         
@@ -104,7 +110,9 @@ public class Main {
 
  
         
-//====================EJERCICIO 4(Casino)====================================     
+//====================EJERCICIO 4(Casino)==================================== 
+
+
     }
     
 }
