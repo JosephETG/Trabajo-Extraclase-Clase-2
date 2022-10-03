@@ -5,7 +5,9 @@ import javax.swing.JOptionPane;
 public class Main {
 
     public static void main(String[] args) {
-//========EJERCICIO 1 (Salario)=============================================         
+        
+//========EJERCICIO 1 (Salario)=============================================  
+        
         float HorasLaboradas;
         float PrecioHora;
         byte AñosAntiguedad;
@@ -54,7 +56,9 @@ public class Main {
             JOptionPane.showMessageDialog(null,
                     "Su Salario es de: " + SalarioBruto);
         }
+        
 //=====================EJERCICIO 2(Farmacia)=================================
+        
         int compra;
         Byte formaPago;
         compra = Integer.parseInt(JOptionPane.showInputDialog(
@@ -76,42 +80,77 @@ public class Main {
                 "Método de pago: Efectivo"+"\n"
                 +"Descuento aplicado: "+efectivo+"\n"
                 +"Su monto a pagar es: "+ Ncompra);
-        }     
-        
-        
-        
+        }
         
 //====================EJERCICIO 3(Temperatura)===============================
+        
         byte temp = 0;
+        
         temp = Byte.parseByte(JOptionPane.showInputDialog(
                 "Digite la temperatura en centígrados: "));
+        
         if (temp <= 10) {
+            
                 JOptionPane.showMessageDialog(null,
                 "Tipo de clima: Frío");
+            
         }
+        
         if (temp <= 20 && temp > 10) {
+            
                 JOptionPane.showMessageDialog(null,
-                "Tipo de clima: Nublado");   
+                "Tipo de clima: Nublado"); 
+            
         }
+        
         if (temp>20 && temp<=30) {
+            
                 JOptionPane.showMessageDialog(null,
                 "Tipo de clima: Caluroso");
+            
         }
+        
         if (temp>30) {
+            
                 JOptionPane.showMessageDialog(null,
                 "Tipo de clima: Tropical");
+            
         }
-        
-        
-
-                
-        
-        
-
- 
         
 //====================EJERCICIO 4(Casino)==================================== 
 
+        byte Dado1;
+        byte Dado2;
+        byte Dado3;
+        
+        Dado1 = Byte.parseByte(JOptionPane.showInputDialog(
+            "Ingrese el primer dado: "));
+        
+        Dado2 = Byte.parseByte(JOptionPane.showInputDialog(
+            "Ingrese el segundo dado: "));
+        
+        Dado3 = Byte.parseByte(JOptionPane.showInputDialog(
+            "Ingrese el tercer dado: "));
+        
+        if ( Dado1 == 6 && Dado2 == 6 && Dado3 == 6 ) {
+            
+            JOptionPane.showMessageDialog(null, "Genial");
+            
+        } else if ( (Dado1 == 6 && Dado2 == Dado1) ||
+                   (Dado2 == 6 && Dado3 == Dado2) ||
+                   (Dado1 == 6 && Dado3 == Dado1) ) {
+            
+            JOptionPane.showMessageDialog(null,"Muy bueno");
+            
+        } else if ( (Dado1 == 6) || (Dado2 == 6) || (Dado3 == 6) ){
+            
+            JOptionPane.showMessageDialog(null, "Justo");
+            
+        } else {
+            
+            JOptionPane.showMessageDialog(null, "Malo");
+            
+        }
 
     }
     
